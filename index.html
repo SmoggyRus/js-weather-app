@@ -7,16 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-<div class="card">
-    <div class="search">
-        <input type="text" placeholder="Enter city name" spellcheck="false">
-        <button><img src="images/search.png"></button>
-    </div>
-    <div class="weather">
-        <img src="images/rain.png" class="wather-icon">
-        <h1 class="temp">20°с</h1>
+<main class="card">
+    <header class="search">
+        <label for="city-input" class="visually-hidden">City name</label>
+        <input id="city-input" type="text" placeholder="Enter city name" spellcheck="false">
+        <button type="button"><img src="images/search.png" alt="Search"></button>
+    </header>
+    <section class="weather">
+        <img src="images/rain.png" class="weather-icon" alt="Weather condition">
+        <h1 class="temp">20°<span lang="en">C</span></h1>
         <h2 class="city">Chelyabinsk</h2>
         <div class="details">
             <div class="col">
@@ -34,7 +36,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+</main>
 </body>
 </html>

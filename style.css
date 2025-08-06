@@ -1,21 +1,54 @@
+:root {
+    /* Цвета фона */
+    --color-bg-body: #222;
+    --color-bg-card: linear-gradient(135deg, #00feba, #5b548a);
+    --color-bg-input: #ebfffc;
+
+    /* Цвета текста */
+    --color-text-primary: #fff;
+    --color-text-secondary: #555;
+
+    /* Радиусы */
+    --radius-sm: 20px;
+    --radius-lg: 30px;
+
+    /* Отступы */
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 body {
-    background: #222;
+    background: var(--color-bg-body);
 }
 
 .card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
+    background: var(--color-bg-card);
+    color: var(--color-text-primary);
     margin: 100px auto 0;
-    border-radius: 20px;
+    border-radius: var(--radius-sm);
     padding: 40px 35px;
     text-align: center;
 }
@@ -30,11 +63,11 @@ body {
 .search input {
     border: 0;
     outline: 0;
-    background: #ebfffc;
-    color: #555;
+    background: var(--color-bg-input);
+    color: var(--color-text-secondary);
     padding: 10px 25px;
     height: 60px;
-    border-radius: 30px;
+    border-radius: var(--radius-lg);
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
@@ -43,7 +76,7 @@ body {
 .search button {
     border: 0;
     outline: 0;
-    background: #ebfffc;
+    background: var(--color-bg-input);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -64,7 +97,7 @@ body {
     font-weight: 500;
 }
 
-.weather h1 {
+.weather h2 {
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
