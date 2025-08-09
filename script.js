@@ -28,7 +28,6 @@ async function checkWeather(city) {
     }
     try {
         const response = await fetch(`${API_URL}${city}&appid=${API_KEY}`);
-        debugger
         if (!response.ok) {
             throw new Error('City not found!');
         }
