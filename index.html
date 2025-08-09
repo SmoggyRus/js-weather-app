@@ -8,6 +8,7 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 <body>
 <main class="card">
@@ -16,9 +17,12 @@
         <input id="city-input" type="text" placeholder="Enter city name" spellcheck="false">
         <button type="button"><img src="images/search.png" alt="Search"></button>
     </header>
+    <section class="error">
+        <p>Invalid city name</p>
+    </section>
     <section class="weather">
         <img src="images/rain.png" class="weather-icon" alt="Weather condition">
-        <h1 class="temp">20°<span lang="en">C</span></h1>
+        <h1 class="temperature">20℃</h1>
         <h2 class="city">Chelyabinsk</h2>
         <div class="details">
             <div class="col">
