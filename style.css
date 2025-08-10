@@ -9,7 +9,7 @@
     /* Цвета текста */
     --color-text-primary: #fff;
     --color-text-secondary: #555;
-    --color-text-error: #e14f4f;
+    --color-text-error: #ffb0bd;
 
     /* Радиусы */
     --radius-sm: 20px;
@@ -140,8 +140,8 @@ body {
 .error {
     display: none;
     opacity: 1;
-    text-align: center;
-    font-size: 24px;
+    text-align: left;
+    font-size: 16px;
     margin-top: 25px;
     color: var(--color-text-error);
 }

@@ -1,5 +1,5 @@
 const API_KEY = "b6091a3cc8f61d6ed7add5113e3eb203";
-const API_URL = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=`;
+const API_URL = `https://api.openweathermap.org/data/2.5/weather?units=metric&lang=ru&q=`;
 
 const searchInput = document.querySelector('.search input');
 const searchButton = document.querySelector('.search button');
@@ -26,6 +26,13 @@ async function checkWeather(city) {
         showError();
         return;
     }
+
+    const isValidCityName = /^[a-zA-Zа-яА-ЯёЁ\s\-]+$/u.test(city);
+    if (!isValidCityName) {
+        showError();
+        return;
+    }
+
     try {
         const response = await fetch(`${API_URL}${city}&appid=${API_KEY}`);
         if (!response.ok) {

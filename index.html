@@ -13,30 +13,35 @@
 <body>
 <main class="card">
     <header class="search">
-        <label for="city-input" class="visually-hidden">City name</label>
-        <input id="city-input" type="text" placeholder="Enter city name" spellcheck="false">
+        <label for="city-input" class="visually-hidden">Название города</label>
+        <input id="city-input" type="text" placeholder="Введите название города" spellcheck="false">
         <button type="button"><img src="images/search.png" alt="Search"></button>
     </header>
     <section class="error">
-        <p>Invalid city name</p>
+        <p>Город не найден. Пожалуйста, проверьте:</p>
+        <ul>
+            <li>Нет ли опечатки в названии</li>
+            <li>Поле не должно быть пустым</li>
+            <li>Попробуйте ввести название на английском (например, "Moscow" вместо "Москва")</li>
+        </ul>
     </section>
     <section class="weather">
         <img src="images/rain.png" class="weather-icon" alt="Weather condition">
         <h1 class="temperature">20℃</h1>
-        <h2 class="city">Chelyabinsk</h2>
+        <h2 class="city">Челябинск</h2>
         <div class="details">
             <div class="col">
                 <img src="images/humidity.png" alt="">
                 <div>
                     <p class="humidity">50%</p>
-                    <p>Humidity</p>
+                    <p>Влажность</p>
                 </div>
             </div>
             <div class="col">
                 <img src="images/wind.png" alt="">
                 <div>
                     <p class="wind">15 km/h</p>
-                    <p>Wind Speed</p>
+                    <p>Скорость ветра</p>
                 </div>
             </div>
         </div>
